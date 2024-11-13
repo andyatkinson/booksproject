@@ -38,3 +38,15 @@ DATABASES = {
 ```sh
 python manage.py migrate
 ```
+
+## Usage
+```python
+python manage.py shell
+```
+```python
+from books.models import Author, Publisher, Book
+Author.objects.create(first_name="Andrew",last_name="Atkinson")
+<Author: Author object (1)>
+author=Author.objects.first()
+author.__dict__
+```
